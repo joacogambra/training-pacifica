@@ -108,7 +108,7 @@ export function Header() {
               className="flex items-center gap-1 hover:text-opacity-70 transition-opacity"
               type="button"
             >
-              Collections
+              Shop
               <ChevronDown className={`h-4 w-4 transition-transform ${isCollectionsOpen ? "rotate-180" : ""}`} />
             </button>
             {isCollectionsOpen && (
@@ -120,7 +120,7 @@ export function Header() {
                   onClick={() => navigateTo("/collections")}
                   className="px-6 py-3 hover:bg-brand-detail/50 transition-colors font-light text-brand-primary cursor-pointer select-none"
                 >
-                  Collection Isla
+                  Bikinis
                 </div>
                 <div
                   onClick={() => navigateTo("/enterizas")}
