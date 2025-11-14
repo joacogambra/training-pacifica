@@ -122,7 +122,7 @@ export default function PacificaLandingPage() {
                         <div className="p-4 text-left">
                           <div className="flex justify-between items-center mb-2">
                             <h3 className="font-light text-lg">{product.name}</h3>
-                            <p className="font-semibold text-lg">{product.price}</p>
+                            {/* <p className="font-semibold text-lg">{product.price}</p> */}
                           </div>
                         </div>
                       </CardContent>
@@ -230,7 +230,7 @@ export default function PacificaLandingPage() {
                       />
                       <div className="p-4">
                         <h3 className="font-light text-xl">Ester Bikini</h3>
-                        <p className="font-semibold text-xl">$84.99</p>
+                        {/* <p className="font-semibold text-xl">$84.99</p> */}
                       </div>
                     </CardContent>
                   </Card>
