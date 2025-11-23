@@ -8,6 +8,7 @@ import { products } from "@/lib/products"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { MapPin, Navigation } from "lucide-react"
+import { VideoGallerySection } from "@/components/video-gallery-section"
 
 function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -199,6 +200,8 @@ export default function PacificaLandingPage() {
             </div> */}
         {/* </div>
         </section> */}
+
+        <VideoGallerySection />
 
         {/* Section 4: Shop The Look */}
         <section className="w-full py-16 md:py-24 px-4">

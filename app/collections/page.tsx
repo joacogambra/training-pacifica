@@ -10,11 +10,11 @@ export default function CollectionsPage() {
     window.scrollTo(0, 0)
   }, [])
 
-  const bravaCollection = [
-    { src: "/images/collections/brava-2.png", alt: "Swim Brava Black", name: "Brava Black" },
-    { src: "/images/collections/brava-1.png", alt: "Swim Brava Red", name: "Brava Red" },
-    { src: "/images/collections/brava-3.png", alt: "Swim Brava Brown", name: "Brava Brown" },
-  ]
+  // const bravaCollection = [
+  //   { src: "/images/collections/brava-2.png", alt: "Swim Brava Black", name: "Brava Black" },
+  //   { src: "/images/collections/brava-1.png", alt: "Swim Brava Red", name: "Brava Red" },
+  //   { src: "/images/collections/brava-3.png", alt: "Swim Brava Brown", name: "Brava Brown" },
+  // ]
 
   const kaiaCollection = [
     { src: "/images/collections/kaia-3.png", alt: "Bikini Kaia Teal", name: "Kaia Teal" },
@@ -35,7 +35,7 @@ export default function CollectionsPage() {
   ]
 
   const ionaCollection = [
-    { src: "/images/collections/iona-1.png", alt: "Bikini Iona Black", name: "Iona Black" },
+    // { src: "/images/collections/iona-1.png", alt: "Bikini Iona Black", name: "Iona Black" },
     { src: "/images/collections/iona-2.png", alt: "Bikini Iona Black", name: "Iona Black" },
     { src: "/images/collections/iona-3.png", alt: "Bikini Iona Red", name: "Iona Red" },
     { src: "/images/collections/iona-4.png", alt: "Bikini Iona Pink", name: "Iona Pink" },
@@ -62,7 +62,7 @@ export default function CollectionsPage() {
         <Header />
         <main className="flex-grow container mx-auto px-4 py-16">
           <div className="text-center mb-16">
-            <h1 className="font-extralight text-5xl md:text-6xl mb-4 tracking-tight">Collections</h1>
+            <h1 className="font-extralight text-5xl md:text-6xl mb-4 tracking-tight">All Bikinis</h1>
             <p className="text-lg text-brand-primary/80 font-light max-w-2xl mx-auto">
               Discover our complete range of sustainable swimwear collections, each designed with unique style and
               crafted with conscience.
@@ -71,7 +71,7 @@ export default function CollectionsPage() {
 
           <div className="max-w-7xl mx-auto space-y-20">
             {/* Swim Brava Collection */}
-            <div className="space-y-8">
+            {/* <div className="space-y-8">
               <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
                 {bravaCollection.map((item, index) => (
                   <div key={index} className="group cursor-pointer">
@@ -86,7 +86,7 @@ export default function CollectionsPage() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Bikini Kaia Collection */}
             <div className="space-y-8">
