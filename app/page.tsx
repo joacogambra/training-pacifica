@@ -270,9 +270,9 @@ export default function PacificaLandingPage() {
                   {/* Florianópolis Location */}
                   <div className="bg-white rounded-lg p-4 md:p-6 shadow-lg backdrop-blur-sm">
                     <div className="flex items-start gap-3 mb-4">
-                      <div className="bg-red-500 rounded-full p-2 flex-shrink-0">
+                      {/* <div className="bg-red-500 rounded-full p-2 flex-shrink-0">
                         <MapPin className="h-4 w-4 text-white" />
-                      </div>
+                      </div> */}
                       <div>
                         <h3 className="font-medium text-lg text-brand-primary mb-1">Florianópolis</h3>
                         <p className="text-sm text-brand-primary/70 font-light leading-relaxed">
@@ -286,16 +286,16 @@ export default function PacificaLandingPage() {
                     </div>
                     <button className="flex items-center gap-2 text-brand-primary hover:text-brand-primary/70 transition-colors font-light">
                       <Navigation className="h-4 w-4" />
-                      <a href="https://maps.app.goo.gl/AZeXnebAXn29PE8g7 target='_blank'">Get Directions</a>
+                      <a href="https://maps.app.goo.gl/56RzYGMscSKkvCgh6" target='_blank'>Get Directions</a>
                     </button>
                   </div>
 
                   {/* Camboriú Location */}
                   <div className="bg-white rounded-lg p-4 md:p-6 shadow-lg backdrop-blur-sm">
                     <div className="flex items-start gap-3 mb-4">
-                      <div className="bg-red-500 rounded-full p-2 flex-shrink-0">
+                      {/* <div className="bg-red-500 rounded-full p-2 flex-shrink-0">
                         <MapPin className="h-4 w-4 text-white" />
-                      </div>
+                      </div> */}
                       <div>
                         <h3 className="font-medium text-lg text-brand-primary mb-1">Camboriú</h3>
                         <p className="text-sm text-brand-primary/70 font-light leading-relaxed">
@@ -307,7 +307,7 @@ export default function PacificaLandingPage() {
                     </div>
                     <button className="flex items-center gap-2 text-brand-primary hover:text-brand-primary/70 transition-colors font-light">
                       <Navigation className="h-4 w-4" />
-                      <a href="https://maps.app.goo.gl/AZeXnebAXn29PE8g7 target='_blank'">Get Directions</a>
+                      <a href="https://maps.app.goo.gl/CUPmbHHgFVvTGDzA7" target='_blank'>Get Directions</a>
                     </button>
                   </div>
                 </div>

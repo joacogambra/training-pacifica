@@ -19,6 +19,17 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+        xs: "0.65rem",
+        sm: "0.75rem",
+        base: "0.875rem",
+        lg: "0.95rem",
+        xl: "1.05rem",
+        "2xl": "1.2rem",
+        "3xl": "1.4rem",
+        "4xl": "1.75rem",
+        "5xl": "2.1rem",
+      },
       colors: {
         "brand-background": "#F9F6F1",
         "brand-primary": "#1B1B1B",

@@ -10,6 +10,7 @@
 
 @layer base {
   :root {
+     font-size: 6px;
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
     --background: 0 0% 100%;
