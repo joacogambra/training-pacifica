@@ -140,7 +140,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
               {/* Size Charts */}
               <div className="flex justify-center">
-                <div className="bg-brand-background rounded-lg p-6 max-w-full overflow-x-auto">
+                <div className="bg-brand-background p-6 max-w-full overflow-x-auto">
                   {selectedChart === "inches" ? (
                     <Image
                       src="/images/size-chart-inches.png"

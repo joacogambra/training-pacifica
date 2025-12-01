@@ -11,40 +11,48 @@ import { MapPin, Navigation } from "lucide-react"
 import { VideoGallerySection } from "@/components/video-gallery-section"
 
 function HeroCarousel() {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const images = [
-    { src: "/images/56b.png", alt: "Woman in black bikini by beach volleyball net" },
-    { src: "/images/89b.png", alt: "Woman in black strappy bikini on beach sand" },
-    { src: "/images/84.jpg", alt: "Artistic shot of woman in black bikini with net shadows" },
-  ]
+  // const [currentSlide, setCurrentSlide] = useState(0)
+  // const images = [
+  //   { src: "/images/56b.png", alt: "Woman in black bikini by beach volleyball net" },
+  //   { src: "/images/89b.png", alt: "Woman in black strappy bikini on beach sand" },
+  //   { src: "/images/84.jpg", alt: "Artistic shot of woman in black bikini with net shadows" },
+  // ]
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % images.length)
-    }, 4000)
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setCurrentSlide((prev) => (prev + 1) % images.length)
+  //   }, 4000)
 
-    return () => clearInterval(timer)
-  }, [images.length])
+  //   return () => clearInterval(timer)
+  // }, [images.length])
 
   return (
-    <div className="flex-grow relative overflow-hidden">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <Image
-            src={image.src || "/placeholder.svg"}
-            alt={image.alt}
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover"
-            priority={index === 0}
-          />
-        </div>
-      ))}
+    <div className="flex-grow relative overflow-hidden bg-white">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="hidden md:block absolute inset-0 w-full h-full object-cover"
+        preload="auto"
+      >
+        
+        <source src="/images/inicio_pc.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="md:hidden absolute inset-0 w-full h-full object-cover"
+        preload="auto"
+      >
+        <source src="/images/inicio_mobile.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       <div className="absolute inset-0 bg-black/30 z-10" />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-brand-secondary p-4 z-20">
         <Image
@@ -108,7 +116,7 @@ export default function PacificaLandingPage() {
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <Link href={`/products/${product.slug}`}>
-                    <Card className="rounded-xl overflow-hidden" style={{ backgroundColor: "#FFFFFF" }}>
+                    <Card className="overflow-hidden" style={{ backgroundColor: "#FFFFFF" }}>
                       <CardContent className="p-0 relative">
                         <div className="absolute top-2 left-2 bg-brand-primary text-brand-secondary text-xs font-semibold uppercase px-2 py-1 z-10">
                           New In
