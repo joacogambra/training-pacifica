@@ -9,6 +9,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { MapPin, Navigation } from "lucide-react"
 import { VideoGallerySection } from "@/components/video-gallery-section"
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
 
 function HeroCarousel() {
   // const [currentSlide, setCurrentSlide] = useState(0)
@@ -64,7 +66,7 @@ function HeroCarousel() {
           priority
         />
         <p className="text-lg md:text-xl max-w-md font-light">
-          Swimwear & beachwear produced sustainably, for the modern soul.
+          Um espaço criado para mulheres que escolhem a beleza do simples, do natural e do essencial. Cada peça nasce inspirada no mar, na liberdade e no movimento.
         </p>
       </div>
     </div>
@@ -140,6 +142,26 @@ export default function PacificaLandingPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Section 3: Collection Logos */}
+        <section className="w-full py-4 md:py-4 px-4">
+          <div className="max-w-4xl mx-auto flex flex-row items-center justify-center gap-8 md:gap-16">
+            <Image
+              src="/images/isla-collection-logo.png"
+              alt="Isla Collection"
+              width={200}
+              height={100}
+              className="h-16 md:h-24 w-auto object-contain"
+            />
+            <Image
+              src="/images/icons-collection-logo.png"
+              alt="Icons x Pacifica"
+              width={300}
+              height={150}
+              className="h-20 md:h-28 w-auto object-contain"
+            />
           </div>
         </section>
 
@@ -343,7 +365,34 @@ export default function PacificaLandingPage() {
           </div>
         </section>
 
-        {/* Section 6: Footer */}
+        {/* Section 6: Join Pacific Soul Newsletter */}
+        <section className="w-full py-16 md:py-24 px-4">
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-white rounded-xl p-8 md:p-12">
+              <h3 className="font-extralight text-3xl md:text-4xl mb-3 text-center">Join Pacific Soul</h3>
+              <p className="text-center text-brand-primary/70 font-light mb-8">
+                Become a friend of Pacífica and be the first to know about new arrivals and exclusive offers.
+              </p>
+              <form className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+                <Input
+                  type="email"
+                  placeholder="Your email"
+                  required
+                  className="bg-brand-background border border-brand-primary/20 rounded-lg text-brand-primary placeholder:text-brand-primary/40 font-light flex-1"
+                />
+                <Button
+                  type="submit"
+                  className="bg-brand-primary text-brand-secondary rounded-lg hover:bg-brand-primary/90 font-medium whitespace-nowrap"
+                >
+                  Join
+                </Button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+
+        {/* Section 7: Footer */}
         <Footer />
       </main>
     </div>
