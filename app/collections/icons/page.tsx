@@ -1,20 +1,24 @@
 "use client"
 
 import { useEffect } from "react"
-import Image from "next/image"
-import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ProductCard } from "@/components/product-card"
 
 export default function IconsPage() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
+  // ============================================================
+  // ICONS PRODUCTS
+  // To add product-specific hover images, add a "hoverImage" field
+  // Example: { ..., hoverImage: "/images/icons/bikini-nixie-hover.jpg" }
+  // ============================================================
   const iconsProducts = [
-    { src: "/images/icons/bikini-nixie-icon.png", alt: "Bikini Nixie Icon", name: "Bikini Nixie Icon", slug: "bikini-nixie-icon", price: "R$399" },
-    { src: "/images/icons/bikini-maris-icon.png", alt: "Bikini Maris Icon", name: "Bikini Maris Icon", slug: "bikini-maris-icon", price: "R$399" },
-    { src: "/images/icons/bikini-ester-icon.png", alt: "Bikini Ester Icon", name: "Bikini Ester Icon", slug: "bikini-ester-icon", price: "R$499" },
+    { image: "/images/icons/bikini-nixie-icon.png", name: "Bikini Nixie Icon", slug: "bikini-nixie-icon", price: "R$399" },
+    { image: "/images/icons/bikini-maris-icon.png", name: "Bikini Maris Icon", slug: "bikini-maris-icon", price: "R$399" },
+    { image: "/images/icons/bikini-ester-icon.png", name: "Bikini Ester Icon", slug: "bikini-ester-icon", price: "R$499" },
   ]
 
   return (
@@ -35,17 +39,14 @@ export default function IconsPage() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
               {iconsProducts.map((item, index) => (
-                <Link href={`/products/${item.slug}`} key={index} className="group cursor-pointer">
-                  <div className="bg-white rounded-lg p-2 shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
-                    <div className="w-full h-[250px] md:h-[350px] relative mb-2">
-                      <Image src={item.src || "/placeholder.svg"} alt={item.alt} fill className="object-contain" />
-                    </div>
-                    <div className="px-2 pb-2 text-center">
-                      <h3 className="font-semibold text-xs text-brand-primary">{item.name}</h3>
-                      <p className="text-sm text-brand-primary/70 mt-1">{item.price}</p>
-                    </div>
-                  </div>
-                </Link>
+                <ProductCard
+                  key={index}
+                  slug={item.slug}
+                  name={item.name}
+                  price={item.price}
+                  image={item.image}
+                  // hoverImage={item.hoverImage} // Uncomment when you add product-specific hover images
+                />
               ))}
             </div>
           </div>
@@ -55,3 +56,4 @@ export default function IconsPage() {
     </div>
   )
 }
+

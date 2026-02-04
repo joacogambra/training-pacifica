@@ -234,7 +234,7 @@ export default function PacificaLandingPage() {
         <VideoGallerySection />
 
         {/* Section 4: Shop The Look */}
-        <section className="w-full py-16 md:py-24 px-4">
+        {/* <section className="w-full py-16 md:py-24 px-4">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="w-full h-full min-h-[500px] overflow-hidden">
               <Image
@@ -263,7 +263,6 @@ export default function PacificaLandingPage() {
                       />
                       <div className="p-4">
                         <h3 className="font-light text-xl">Ester Bikini</h3>
-                        {/* <p className="font-semibold text-xl">$84.99</p> */}
                       </div>
                     </CardContent>
                   </Card>
@@ -271,7 +270,7 @@ export default function PacificaLandingPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Section 5: Store Locations */}
         <section className="w-full py-16 md:py-24 px-4">

@@ -4,6 +4,7 @@ import { Work_Sans } from "next/font/google"
 import "./globals.css"
 import { cn } from "@/lib/utils"
 import { LoadingScreen } from "@/components/loading-screen"
+import { WhatsAppButton } from "@/components/whatsapp-button"
 
 const fontSans = Work_Sans({
   subsets: ["latin"],
@@ -14,7 +15,6 @@ const fontSans = Work_Sans({
 export const metadata: Metadata = {
   title: "Pacífica Swimwear",
   description: "Swimwear & beachwear produced sustainably",
-    generator: 'J'
 }
 
 export default function RootLayout({
@@ -27,6 +27,7 @@ export default function RootLayout({
       <body className={cn("min-h-screen bg-white font-sans antialiased", fontSans.variable)}>
         <LoadingScreen />
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   )
