@@ -5,28 +5,14 @@ import Image from "next/image"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { products } from "@/lib/products"
 
-export default function EnterizasPage() {
+export default function SwimSuitPage() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
-  const bravaCollection = [
-    { src: "/images/collections/brava-2.png", alt: "Swim Brava Black", name: "Brava Black", slug: "brava-black" },
-    { src: "/images/collections/brava-1.png", alt: "Swim Brava Red", name: "Brava Red", slug: "brava-red" },
-    { src: "/images/collections/brava-3.png", alt: "Swim Brava Brown", name: "Brava Brown", slug: "brava-brown" },
-  ]
-
-  const coraCollection = [
-    { src: "/images/enterizas/cora-1.png", alt: "Enteriza Cora Brown", name: "Cora Brown", slug: "cora-brown" },
-    { src: "/images/enterizas/cora-2.png", alt: "Enteriza Cora Light Blue", name: "Cora Light Blue", slug: "cora-light-blue" },
-    { src: "/images/enterizas/cora-3.png", alt: "Enteriza Cora Navy", name: "Cora Navy", slug: "cora-navy" },
-  ]
-
-  const kaiCollection = [
-    { src: "/images/enterizas/kai-1.png", alt: "Enteriza Kai Black", name: "Kai Black", slug: "kai-black" },
-    { src: "/images/enterizas/kai-2.png", alt: "Enteriza Kai Red", name: "Kai Red", slug: "kai-red" },
-  ]
+  const swimsuitProducts = products.filter((product) => product.category === "swimsuit")
 
   return (
     <div
@@ -37,66 +23,27 @@ export default function EnterizasPage() {
         <Header />
         <main className="flex-grow container mx-auto px-4 py-16">
           <div className="text-center mb-16">
-            <h1 className="font-extralight text-5xl md:text-6xl mb-4 tracking-tight">Enterizas</h1>
+            <h1 className="font-extralight text-5xl md:text-6xl mb-4 tracking-tight">SwimSuit</h1>
             <p className="text-lg text-brand-primary/80 font-light max-w-2xl mx-auto">
-              Descubre nuestra colección de trajes de baño enterizos, diseñados para combinar estilo y comodidad con
-              conciencia sostenible.
+              Explore our elegant one-piece swimsuits designed for sophistication and comfort.
             </p>
           </div>
 
-          <div className="max-w-7xl mx-auto space-y-20">
-            {/* Swim Brava Collection */}
-            <div className="space-y-8">
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-                {bravaCollection.map((item, index) => (
-                  <Link href={`/products/${item.slug}`} key={index} className="group cursor-pointer">
-                    <div className="bg-white rounded-lg p-2 shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
-                      <div className="w-full h-[300px] md:h-[500px] relative mb-2">
-                        <Image src={item.src || "/placeholder.svg"} alt={item.alt} fill className="object-contain" />
-                      </div>
-                      <div className="px-2 pb-2 text-center">
-                        <h3 className="font-semibold text-xs text-brand-primary">{item.name}</h3>
-                      </div>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              {swimsuitProducts.map((item, index) => (
+                <Link href={`/products/${item.slug}`} key={index} className="group cursor-pointer">
+                  <div className="bg-white rounded-lg p-2 shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
+                    <div className="w-full h-[250px] md:h-[350px] relative mb-2">
+                      <Image src={item.image || "/placeholder.svg"} alt={item.name} fill className="object-contain" />
                     </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* Enteriza Cora Collection */}
-            <div className="space-y-8">
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-                {coraCollection.map((item, index) => (
-                  <Link href={`/products/${item.slug}`} key={index} className="group cursor-pointer">
-                    <div className="bg-white rounded-lg p-2 shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
-                      <div className="w-full h-[300px] md:h-[500px] relative mb-2">
-                        <Image src={item.src || "/placeholder.svg"} alt={item.alt} fill className="object-contain" />
-                      </div>
-                      <div className="px-2 pb-2 text-center">
-                        <h3 className="font-semibold text-xs text-brand-primary">{item.name}</h3>
-                      </div>
+                    <div className="px-2 pb-2 text-center">
+                      <h3 className="font-semibold text-xs text-brand-primary">{item.name}</h3>
+                      <p className="text-sm text-brand-primary/70 mt-1">{item.price}</p>
                     </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* Enteriza Kai Collection */}
-            <div className="space-y-8">
-              <div className="grid grid-cols-2 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                {kaiCollection.map((item, index) => (
-                  <Link href={`/products/${item.slug}`} key={index} className="group cursor-pointer">
-                    <div className="bg-white rounded-lg p-2 shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
-                      <div className="w-full h-[300px] md:h-[500px] relative mb-2">
-                        <Image src={item.src || "/placeholder.svg"} alt={item.alt} fill className="object-contain" />
-                      </div>
-                      <div className="px-2 pb-2 text-center">
-                        <h3 className="font-semibold text-xs text-brand-primary">{item.name}</h3>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </main>

@@ -170,11 +170,11 @@ export function Header() {
                   <ul className="space-y-3" role="none">
                     <li>
                       <div
-                        onClick={() => navigateTo("/collections")}
+                        onClick={() => navigateTo("/shop/bikinis")}
                         className="block text-sm font-light text-brand-primary hover:text-brand-primary/70 cursor-pointer transition-colors"
                         role="menuitem"
                         tabIndex={0}
-                        onKeyDown={(e) => e.key === "Enter" && navigateTo("/collections")}
+                        onKeyDown={(e) => e.key === "Enter" && navigateTo("/shop/bikinis")}
                       >
                         Bikinis
                       </div>
@@ -263,22 +263,22 @@ export function Header() {
                   <ul className="space-y-3" role="none">
                     <li>
                       <div
-                        onClick={() => navigateTo("/collections")}
+                        onClick={() => navigateTo("/collections/isla-x-pacifica")}
                         className="block text-sm font-light text-brand-primary hover:text-brand-primary/70 cursor-pointer transition-colors"
                         role="menuitem"
                         tabIndex={0}
-                        onKeyDown={(e) => e.key === "Enter" && navigateTo("/collections")}
+                        onKeyDown={(e) => e.key === "Enter" && navigateTo("/collections/isla-x-pacifica")}
                       >
                         Isla x Pacifica
                       </div>
                     </li>
                     <li>
                       <div
-                        onClick={() => navigateTo("/collections")}
+                        onClick={() => navigateTo("/collections/icons")}
                         className="block text-sm font-light text-brand-primary hover:text-brand-primary/70 cursor-pointer transition-colors"
                         role="menuitem"
                         tabIndex={0}
-                        onKeyDown={(e) => e.key === "Enter" && navigateTo("/collections")}
+                        onKeyDown={(e) => e.key === "Enter" && navigateTo("/collections/icons")}
                       >
                         Icons
                       </div>
@@ -440,7 +440,7 @@ export function Header() {
                       <h4 className="text-xs font-semibold uppercase tracking-wider text-brand-primary/50 mb-2">Shop</h4>
                       <div className="space-y-1">
                         <div
-                          onClick={() => navigateTo("/collections")}
+                          onClick={() => navigateTo("/shop/bikinis")}
                           className="block px-2 py-2 font-light text-sm text-brand-primary/80 hover:bg-brand-detail/30 rounded-lg transition-colors cursor-pointer"
                         >
                           Bikinis
@@ -493,13 +493,13 @@ export function Header() {
                       <h4 className="text-xs font-semibold uppercase tracking-wider text-brand-primary/50 mb-2">Collections</h4>
                       <div className="space-y-1">
                         <div
-                          onClick={() => navigateTo("/collections")}
+                          onClick={() => navigateTo("/collections/isla-x-pacifica")}
                           className="block px-2 py-2 font-light text-sm text-brand-primary/80 hover:bg-brand-detail/30 rounded-lg transition-colors cursor-pointer"
                         >
                           Isla x Pacifica
                         </div>
                         <div
-                          onClick={() => navigateTo("/collections")}
+                          onClick={() => navigateTo("/collections/icons")}
                           className="block px-2 py-2 font-light text-sm text-brand-primary/80 hover:bg-brand-detail/30 rounded-lg transition-colors cursor-pointer"
                         >
                           Icons
@@ -549,3 +549,4 @@ export function Header() {
     </header>
   )
 }
+

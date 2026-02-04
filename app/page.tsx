@@ -39,7 +39,7 @@ function HeroCarousel() {
         preload="auto"
       >
         
-        <source src="/images/pagina-de-inicio.mp4" type="video/mp4" />
+        <source src="/images/inicio_pc.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

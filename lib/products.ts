@@ -6,10 +6,311 @@ export type Product = {
   colors: { name: string; hex: string }[]
   sizes: string[]
   description: string
-  category: "bikini" | "swimsuit" | "bottom"
+  category: "bikini" | "swimsuit" | "bottom" | "top"
 }
 
 export const products: Product[] = [
+  // Isla x Pacifica Collection
+  {
+    slug: "top-kaia-blue-isla",
+    name: "Top Kaia Blue",
+    price: "R$585,85",
+    image: "/images/isla-pacifica/top-kaia-blue.png",
+    colors: [
+      { name: "Blue", hex: "#0077B6" },
+      { name: "Light Blue", hex: "#ADD8E6" },
+      { name: "Pink", hex: "#FFC0CB" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Kaia Top in vibrant blue features a halter neck design with adjustable tie straps. Part of our exclusive Isla x Pacifica collaboration, crafted with sustainable materials.",
+    category: "top",
+  },
+  {
+    slug: "top-kaia-light-blue-isla",
+    name: "Top Kaia Light Blue",
+    price: "R$585,85",
+    image: "/images/isla-pacifica/top-kaia-light-blue.png",
+    colors: [
+      { name: "Light Blue", hex: "#ADD8E6" },
+      { name: "Blue", hex: "#0077B6" },
+      { name: "Pink", hex: "#FFC0CB" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Kaia Top in soft light blue features a halter neck design with adjustable tie straps. Part of our exclusive Isla x Pacifica collaboration, crafted with sustainable materials.",
+    category: "top",
+  },
+  {
+    slug: "top-kaia-pink-isla",
+    name: "Top Kaia Pink",
+    price: "R$585,85",
+    image: "/images/isla-pacifica/top-kaia-pink.png",
+    colors: [
+      { name: "Pink", hex: "#FFC0CB" },
+      { name: "Blue", hex: "#0077B6" },
+      { name: "Light Blue", hex: "#ADD8E6" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Kaia Top in vibrant pink features a halter neck design with adjustable tie straps. Part of our exclusive Isla x Pacifica collaboration, crafted with sustainable materials.",
+    category: "top",
+  },
+  {
+    slug: "top-iona-red-isla",
+    name: "Top Iona Red",
+    price: "R$585,85",
+    image: "/images/isla-pacifica/top-iona-red.png",
+    colors: [
+      { name: "Red", hex: "#FF0000" },
+      { name: "Pink", hex: "#E91E63" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Iona Top in bold red features a strapless bandeau design with a flattering twist detail. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "top",
+  },
+  {
+    slug: "top-iona-pink-isla",
+    name: "Top Iona Pink",
+    price: "R$585,85",
+    image: "/images/isla-pacifica/top-iona-pink.png",
+    colors: [
+      { name: "Pink", hex: "#E91E63" },
+      { name: "Red", hex: "#FF0000" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Iona Top in vibrant pink features a strapless bandeau design with a flattering twist detail. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "top",
+  },
+  {
+    slug: "bottom-kaia-blue-isla",
+    name: "Bottom Kaia Blue",
+    price: "R$585,85",
+    image: "/images/isla-pacifica/bottom-kaia-blue.png",
+    colors: [
+      { name: "Blue", hex: "#0077B6" },
+      { name: "Light Blue", hex: "#ADD8E6" },
+      { name: "Pink", hex: "#FFC0CB" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Kaia Bottom in vibrant blue features a high-cut silhouette with double straps for a modern look. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "bottom",
+  },
+  {
+    slug: "bottom-kaia-light-blue-isla",
+    name: "Bottom Kaia Light Blue",
+    price: "R$585,85",
+    image: "/images/isla-pacifica/bottom-kaia-light-blue.png",
+    colors: [
+      { name: "Light Blue", hex: "#ADD8E6" },
+      { name: "Blue", hex: "#0077B6" },
+      { name: "Pink", hex: "#FFC0CB" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Kaia Bottom in soft light blue features a high-cut silhouette with double straps for a modern look. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "bottom",
+  },
+  {
+    slug: "bottom-kaia-pink-isla",
+    name: "Bottom Kaia Pink",
+    price: "R$585,85",
+    image: "/images/isla-pacifica/bottom-kaia-pink.png",
+    colors: [
+      { name: "Pink", hex: "#FFC0CB" },
+      { name: "Blue", hex: "#0077B6" },
+      { name: "Light Blue", hex: "#ADD8E6" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Kaia Bottom in vibrant pink features a high-cut silhouette with double straps for a modern look. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "bottom",
+  },
+  {
+    slug: "bottom-iona-red-isla",
+    name: "Bottom Iona Red",
+    price: "R$585,85",
+    image: "/images/isla-pacifica/bottom-iona-red.png",
+    colors: [
+      { name: "Red", hex: "#FF0000" },
+      { name: "Pink", hex: "#E91E63" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Iona Bottom in bold red features a high-cut design with thin double straps. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "bottom",
+  },
+  {
+    slug: "bottom-iona-pink-isla",
+    name: "Bottom Iona Pink",
+    price: "R$585,85",
+    image: "/images/isla-pacifica/bottom-iona-pink.png",
+    colors: [
+      { name: "Pink", hex: "#E91E63" },
+      { name: "Red", hex: "#FF0000" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Iona Bottom in vibrant pink features a high-cut design with thin double straps. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "bottom",
+  },
+  {
+    slug: "top-iona-black-isla",
+    name: "Top Iona Black",
+    price: "R$999",
+    image: "/images/isla-pacifica/top-iona-black.png",
+    colors: [
+      { name: "Black", hex: "#000000" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Iona Top in classic black features a strapless bandeau design with a flattering twist detail. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "top",
+  },
+  {
+    slug: "bottom-iona-black-isla",
+    name: "Bottom Iona Black",
+    price: "R$999",
+    image: "/images/isla-pacifica/bottom-iona-black.png",
+    colors: [
+      { name: "Black", hex: "#000000" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Iona Bottom in classic black features a high-cut design with thin double straps. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "bottom",
+  },
+  {
+    slug: "swim-kai-light-blue-isla",
+    name: "Swim Kai Light Blue",
+    price: "R$999",
+    image: "/images/isla-pacifica/swim-kai-light-blue.png",
+    colors: [
+      { name: "Light Blue", hex: "#7DD8D8" },
+      { name: "Viola", hex: "#9BB8D3" },
+      { name: "Brown", hex: "#8B6914" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Kai one-piece swimsuit in refreshing light blue features a deep V-neck and elegant wrap waist detail. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "swimsuit",
+  },
+  {
+    slug: "swim-kai-black-isla",
+    name: "Swim Kai Black",
+    price: "R$999",
+    image: "/images/isla-pacifica/swim-kai-black.png",
+    colors: [
+      { name: "Black", hex: "#000000" },
+      { name: "Red", hex: "#FF0000" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Kai one-piece swimsuit in bold black features a deep V-neck with lace-up front detail and adjustable side ties. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "swimsuit",
+  },
+  {
+    slug: "swim-brava-red-isla",
+    name: "Swim Brava Red",
+    price: "R$999",
+    image: "/images/isla-pacifica/swim-brava-red.png",
+    colors: [
+      { name: "Red", hex: "#FF0000" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Brava one-piece swimsuit in stunning red features an asymmetric design with dramatic cutout and single shoulder strap. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "swimsuit",
+  },
+  {
+    slug: "swim-kai-viola-isla",
+    name: "Swim Kai Viola",
+    price: "R$999",
+    image: "/images/isla-pacifica/swim-kai-viola.png",
+    colors: [
+      { name: "Viola", hex: "#9BB8D3" },
+      { name: "Light Blue", hex: "#7DD8D8" },
+      { name: "Brown", hex: "#8B6914" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Kai one-piece swimsuit in soft viola features a deep V-neck and elegant wrap waist detail. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "swimsuit",
+  },
+  {
+    slug: "swim-kai-brown-isla",
+    name: "Swim Kai Brown",
+    price: "R$999",
+    image: "/images/isla-pacifica/swim-kai-brown.png",
+    colors: [
+      { name: "Brown", hex: "#8B6914" },
+      { name: "Light Blue", hex: "#7DD8D8" },
+      { name: "Viola", hex: "#9BB8D3" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Kai one-piece swimsuit in earthy brown features a deep V-neck and elegant wrap waist detail. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "swimsuit",
+  },
+  {
+    slug: "swim-kai-red-isla",
+    name: "Swim Kai Red",
+    price: "R$999",
+    image: "/images/isla-pacifica/swim-kai-red.png",
+    colors: [
+      { name: "Red", hex: "#FF0000" },
+      { name: "Black", hex: "#000000" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Kai one-piece swimsuit in vibrant red features a deep V-neck with lace-up front detail and adjustable side ties. Part of our exclusive Isla x Pacifica collaboration.",
+    category: "swimsuit",
+  },
+
+  // Icons Collection
+  {
+    slug: "bikini-nixie-icon",
+    name: "Bikini Nixie Icon",
+    price: "R$399",
+    image: "/images/icons/bikini-nixie-icon.png",
+    colors: [
+      { name: "Brown", hex: "#3D2B1F" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Nixie Icon bikini features a stunning bandeau top with a golden starfish centerpiece and matching high-cut bottom with double straps. A statement piece from our Icons collection.",
+    category: "bikini",
+  },
+  {
+    slug: "bikini-maris-icon",
+    name: "Bikini Maris Icon",
+    price: "R$399",
+    image: "/images/icons/bikini-maris-icon.png",
+    colors: [
+      { name: "Teal", hex: "#008080" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Maris Icon bikini features an elegant top with a golden shell centerpiece and tie-side bottom with gold chain details. A stunning piece from our Icons collection.",
+    category: "bikini",
+  },
+  {
+    slug: "bikini-ester-icon",
+    name: "Bikini Ester Icon",
+    price: "R$499",
+    image: "/images/icons/bikini-ester-icon.png",
+    colors: [
+      { name: "Red", hex: "#C41E3A" },
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    description:
+      "The Ester Icon bikini features a halter top with golden starfish detail and matching high-cut bottom with starfish accent. A bold statement from our Icons collection.",
+    category: "bikini",
+  },
+
   // Original products
   {
     slug: "maris-bikini",
